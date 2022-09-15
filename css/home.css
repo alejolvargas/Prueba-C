@@ -1,0 +1,703 @@
+* {
+    box-sizing: content-box;
+   /*  font-family: neueMachinaRegular; */
+}
+/* 
+@font-face {
+    font-family: neueMachinaRegular;
+    src: url("./font/NeueMachina-Regular.otf");
+}
+@font-face {
+    font-family: neueMachinaLight;
+    src: url("./font/NeueMachina-Light.otf");
+}
+@font-face {
+    font-family: neueMachinaUltrabold;
+    src: url("./font/NeueMachina-Ultrabold.otf");
+}
+
+ */
+.container {
+    padding: 0 45px;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.last-price {
+    color:#C8C8C8;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+}
+.offer {
+    color: #EC2227;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+/* ---------------nav------------------ */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav__item {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+   
+}
+.nav__item--user {
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.nav__link {
+ text-decoration: none;
+ color: #8C8C8C;
+}
+.nav__link--category {
+    color: #000000;
+}
+.orange {
+   color: red;
+   display: inline-block;
+   border: 2px solid red;
+   position: relative;
+   font-size: 16px;
+   font-weight: bold;
+   line-height: 18px;
+   padding: 2px 5px;
+}
+.orange:before, .orange:after {
+   content: '';
+   position: absolute;
+   background-color: red;
+   border-radius: 6px;
+   width: 6px;
+   height: 6px;
+   box-shadow: 0 26px 0 0 red;
+   top: -5px;
+ }
+.orange:before {
+   left: -5px;
+   }
+.orange:after {
+   right: -5px;
+   }
+.nav__link--select {
+    color: #EC2227;
+     border: 2px solid #EC2227;
+}
+.nav__item--circle {
+    border: 1px solid #8C8C8C;
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    position: relative;
+    
+}
+
+/* promotion */
+
+.promotion {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7D5A94;
+    padding: 8px 30px 7px 24px;
+    color: #ffffff;
+}
+.Benefits__list {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+.Benefits__item {
+    display: flex;
+    align-items: center;
+}
+.Benefits__text {
+    margin: 0 20px;
+}
+.Benefits__text p {
+    margin: 0 ;
+}
+    
+
+.Benefits__text p:nth-child(1) {
+
+    font-family: 'Neue Machina';
+    font-weight: 800;
+    font-size: 16px;
+}
+.Benefits__text p:nth-child(2) {
+    font-family: 'Inter';
+    color: #EC2227;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.Benefits__space {
+    width: 28px;
+    height: 1px;
+    background-color: #C8C8C8;
+    transform: rotate(-52deg);
+    margin-top: 16px;
+    margin-right: 29px;
+}
+
+/* collection */
+.collection-info {
+    width: 45%;
+    padding: 15px 0 0 37px;
+}
+.collection-info h1{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 54px;
+}
+.collection-info p{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+
+}
+.collection-info__botton {
+    width: 175px;
+    height: 48px; 
+    background-color: #F26522;
+    border: 2px solid #000000;
+    box-shadow: 3px 3px 0px #000000;
+    border-radius: 6px;
+    position: relative;
+}
+.collection-info a{
+    position:absolute ;
+    top: 15px;
+    left: 41px;
+    text-decoration: none;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+/* section-first */
+.section-first {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+/* grid card */
+
+.grid-card {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.card__figure img {
+    width: 100%;
+}
+/* Nuestras marcas */
+
+.brand__controller {
+    height: 66px;
+}
+.brand h2 {
+    color: #7D5A94;
+    font-weight: 800;
+    font-size: 27px;
+    margin: 30px 0;
+}
+.swiper-brand {
+    height: 70px; 
+}
+
+
+.brand__item {
+    width: 133px;
+    height: 60px;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-more-search {
+    display: flex;
+    column-gap: 24px;
+    justify-content: center;
+}
+
+/* jueguetes del dia */
+.toys-day h1{
+    font-weight: 700;
+    font-size: 108px;
+    line-height: 96px;
+    color: #F26522;
+    margin-bottom: 10px;
+    font-family: initial;
+}
+
+.toys-day__grid {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 56px;
+    column-gap: 39px;
+}
+
+.banner-product{
+  margin: 144px 0;
+}
+.toys-day__img {
+    background-image: url("../imagenes/productos/miniatura.png");
+    width: 100%;
+    height: 526px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+}
+.list-more-search__item {
+    display: flex;
+    align-items: center;
+}
+.list-more-search__text p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+}
+ .list-more-search__text p:nth-child(){
+    color: #8C8C8C;
+    margin: 0;
+ }
+.list-more-search h2{
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 30px;
+    color: #76B043;
+}
+/* Novedades */
+.grid-card--section {
+    width: 100%;
+    column-gap: 114px;
+}
+.News__title {
+font-weight: 800;
+font-size: 34px;
+line-height: 36px;
+}
+  /*   <!--  recorrer el mundo --> */
+.world {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 96px;
+}
+ .world__item {
+       background-image: url("../imagenes/productos/jansport.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  
+    z-index: -1;
+    height: 550px;
+}
+  .world__img2 {
+   background-image: url("../imagenes/productos/jansport2.png");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 35%;
+    margin-top: 25%;
+    margin-right: 30%;
+ }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+   
+}
+ .finish-time {
+    width: 255px;
+}
+/*         <!-- Termina en: --> */
+
+.finish-time__title {
+    color: #505050!important;
+  
+    margin: 0;
+}
+.time-number {
+    color: #EC2227;
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 30px;
+}
+.time-text {
+    color: #505050;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+
+}
+
+/* footer */
+.frequent-questions {
+    text-align: initial;
+}
+.form-footer {
+    text-align: initial;
+}
+.info--email {
+    width: 121px;
+}
+.semi-circle-container {
+    display: flex;
+    justify-content: center;
+     margin: 70px 0;
+   
+}
+.semi-circle-container a {
+    text-decoration: none;
+    color: #000000;
+    font-family: neueMachinaUltrabold;
+}
+.semi-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+    border: 2px solid #555;
+    background: #FDB913;
+    border-radius: 120px 120px 0px 0px;
+    margin: auto 0;
+    text-align: center;
+}
+
+.info-general {
+   display: flex;
+   justify-content: center;
+   column-gap: 72px;
+   margin-bottom: 50px;
+   color: #8C8C8C;
+   font-size: 10px;
+   row-gap: 48px;
+}
+.button-submit {
+    background-color: #ffffff;
+    width: 70px;
+    height: 30px;
+    border: 2px solid #000000;
+    box-shadow: 3px 3px 0px #000000;
+    border-radius: 6px;
+    margin-top: 5px ;
+}
+
+.net-social__item {
+    display: flex;
+    align-items: center;
+}
+.net-social__item p {
+ margin: 9px 5px; 
+
+}
+.net-social__item1 p {
+ margin: 20px 0; 
+
+}
+
+.net-social__item-mod {
+    height: 32px;
+}
+.contact {
+    display: none;
+}
+.contact p:nth-child(1) {
+
+  font-weight: 900;
+  color: #F26522;
+}
+.contact p:nth-child(2) {
+
+  font-weight: 900;
+  font-size: 10px;
+  color: #C8C8C8;
+}
+
+/* slider */
+.slide-container {
+    height: 650px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: #000000;
+    border: 1px solid #C8C8C8;
+    border-radius: 47px;
+    width: 44px;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+   
+    font-size: 20px;
+}
+
+.swiper-button-prev{
+    left: 2px;
+    top: 600px; 
+}
+.swiper-button-next {
+   left: 60px;
+    top: 600px;
+}
+.nav-movil {
+
+   display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* whatapp */
+.whatapp-contact {
+    position: fixed;
+    top: 684px;
+    z-index: 9999;
+    right: 12px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+.banner-product {
+    margin: 78px 0;
+}
+.list-more-search {
+    flex-wrap: wrap;
+}
+
+}
+@media only screen and (max-width: 769px) {
+    .public-info {
+    background-image: url("../imagenes/icon/public-count.png");
+    position: fixed;
+    top: 168px;
+    width: 194px;
+    height: 96px;
+    text-align: center;
+    font-weight: 700;
+    z-index: 9999;
+}
+.close-public {
+    background-color: #ffffff;
+    width: 23px;
+    border-radius: 10px;
+    position: absolute;
+    right: 3px;
+    border: 1px solid #000000;
+}
+
+    .container {
+    padding: 0 5px;
+   
+}
+    .grid-card--none {
+        display: none;
+    }
+    .grid-card {
+
+    width: 100%;
+    
+}
+    .section-first {
+       align-items: center;
+       flex-direction: column;  
+       margin: 37px auto;
+    }
+    .toys-day__grid {
+      flex-direction: column-reverse;
+      padding-left: 0;
+
+    }
+    .world {
+      flex-direction: column;
+    }
+    .world__item {
+ 
+    width: 100%;
+    
+    }
+    .collection-info {
+  
+    order: 4;
+    }
+    .collection-info__text {
+        display: none;
+    }
+
+    .collection-info__botton {
+      margin: 72px auto 18px auto;
+    }
+    .brand h2 {
+    text-align: center;
+    }
+    .toys-day h1 {
+    font-size: 55px;
+    text-align: center;
+    }
+
+    .nav{
+    display: none;
+    }
+
+    .nav-movil {
+     display: flex;  
+     justify-content: space-between;
+     padding: 0 10px;
+    }
+    .Benefits {
+        display: none;
+    }
+    .card__footer{
+        display: none;
+    }
+
+    .toys-day__img {
+        
+        height: 407px;
+
+    }
+    .collection-info {
+
+        padding: 0;
+    }
+    .contact {
+        display: block;
+            order: 1;
+    }
+    .form-footer {
+        order: 2;
+    }
+    .frequent-questions {
+        order: 4;
+    }
+    .net-social {
+        order: 3;
+    }
+    .info-general {
+        column-gap: 0px;
+        flex-wrap: wrap;
+        text-align: center;
+
+    }
+    .info-general div {
+        flex-basis: 39%;
+    }
+    .net-social__item {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+    .card {
+        width: 200px;
+        padding: 10px;
+    }
+    .card--mb .card__figure {
+        width: 200px;
+    }
+    .card--mb {
+        display: flex;
+        height: 310px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 426px) {
+
+    .card {
+        width: 130px;
+        height: 390px;
+        padding: 0px;
+    }
+
+        .card--mb {
+    width: 100%;
+    
+        height: 140px;
+    
+    }
+    .list-more-search__item {
+    
+        flex-basis: 45%;
+    }
+    .card--mb .card__figure {
+        width: 130px;
+    }
+
+    .card--second {
+
+        top: 65px;
+    }
+    .toys-day h1 {
+        font-size: 43px;
+
+    }
+    .toys-day__img {
+        height: 210px;
+    }
+    .swiper-button-prev {
+    
+        top: 400px;
+    }
+    .swiper-button-next {
+    
+        top: 400px;
+    }
+    .slide-container {
+        height: 425px;
+    }
+    .world {
+        margin-top: 15px;
+    }
+    .image-container {
+    
+        height: 190px;
+    }
+    .banner-product {
+        margin: 33px 0;
+    }
+    .list-more-search {
+        row-gap: 20px;
+        column-gap: 0px;
+    }
+    .finish-time__title {
+
+        font-size: 16px!important;
+    
+    }
+    .finish-time {
+        width: 138px;
+    }
+    .semi-circle-container {
+    
+        margin: 35px 0;
+    }
+    .net-social__item--mod p {
+        margin-left: 16px;
+    }
+}

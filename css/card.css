@@ -1,0 +1,166 @@
+@font-face {
+    font-family: neueMachinaRegular;
+    src: url("./font/NeueMachina-Regular.otf");
+}
+@font-face {
+    font-family: neueMachinaLight;
+    src: url("./font/NeueMachina-Light.otf");
+}
+@font-face {
+    font-family: neueMachinaUltrabold;
+    src: url("./font/NeueMachina-Ultrabold.otf");
+}
+
+* {
+    font-family: neueMachinaLight;
+}
+
+/* card */
+.card {
+    width: 240px;
+    height: 510px;
+    padding: 15px;
+}
+.card__header {
+    position: relative;
+}
+.card__body h3 {
+    color: #7D5A94;
+    line-height: 18px;
+    margin: 0
+ }
+ .card__body h4 {
+   margin: 5px 0 10px 0;
+   font-size: 15px;
+   font-weight: 400;
+ }
+
+ .card__text p:nth-child(1){
+    color: #8C8C8C;
+    margin: 0;
+ }
+ .card__text p:nth-child(2){
+    color: #000000;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+    
+ }
+ .card__text p:nth-child(3){
+    color: #000000;
+    margin: 10px 0;
+    display: inline;
+ }
+ .card__text span {
+    margin-left: 10px;
+    font-weight: 700;
+ }
+.card__footer {
+    margin: 12px 0;
+ }
+ .card__actions {
+    border: 1px solid #76B043;
+    border-radius: 6px;
+    width: 60px;
+    height: 48px;
+    position: relative;
+ }
+.card__actions img {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+}
+/* card second*/
+.card--second {
+    position: relative;
+    top: 100px;
+}
+
+.last-price {
+    color:#C8C8C8;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+}
+.offer {
+    color: #EC2227;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.card-list {
+    width: 390px;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+}
+.card__body {
+    margin-top: 12px;
+}
+ .card__body h3 {
+    font-size: 16px;
+    font-family: neueMachinaUltrabold;
+    }
+
+
+  .discount {
+    background-image: url("../imagenes/icon/descuento.png");
+    background-repeat: no-repeat;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    color: #ffffff;
+    width: 60px;
+    left: -10px;
+}
+
+.discount p {
+    font-size: 12px;
+    text-align: center;
+    transform: rotate(-20deg);
+}
+
+@media only screen and (max-width: 426px) {
+    .card-list {
+    flex-direction: row;   
+    column-gap: 12px;
+    height: 184px;
+    border-bottom: 1px solid #F0F0F0;
+    }
+
+    .card__text p:nth-child(2) {
+    font-size: 16px;  
+    }
+    .card__body {
+    margin-top: 5px;
+    }
+    .card__body h4 {
+     font-size: 13px;
+    } 
+    .card__text p:nth-child(1) {
+     font-size: 13px;
+    }
+    .card__text p:nth-child(3) {
+    font-size: 13px;
+    }
+    .last-price {
+     font-size: 13px;
+    }
+    .card__text span {
+     margin-left: 3px;
+    }
+    .offer {
+    font-size: 13px;
+    }
+}
+@media only screen and (max-width: 376px) {
+    .card-list {
+     width: 346px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .card-list {
+     width: 286px;
+    }
+}
